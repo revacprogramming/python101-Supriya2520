@@ -1,3 +1,6 @@
 # Dictionaries
+n=4
+whlie n>0
+print(n)
+n=n-1
 
-filename = "dataset/mbox-short.txt"

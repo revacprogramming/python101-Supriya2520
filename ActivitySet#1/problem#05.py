@@ -1,11 +1,11 @@
 def computepay(h, r):
     if h > 40 :
-        reg = r * h
-        otp = (h - 40.0) * (r * 0.5)
-        pay = reg + otp
+        a = r * h
+        b = (h - 40.0) * (r * 0.5)
+        pay = a + b
     else:
         pay = h * r
-    return pay
+    return Pay
 sh = input ("enter h:")
 sr = input ("enter r:")
 fh = float(sh)

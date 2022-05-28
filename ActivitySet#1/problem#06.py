@@ -3,14 +3,10 @@ large=None
 small=None
 while True:
   n=input()
-  if(n=="done"):
+  if(n == "done"):
     break
     try:
       num=int(n)
-
-    except:
-      print("invalid input")
-      continue
       if small is None:
         small=num
         elif(small>num):
@@ -21,5 +17,7 @@ while True:
         elif(large<num):
           large=num
           continue
+    except:
+      print("invalid input")    
 print("Maximum is",large)
 print("Minimum is",small)
