@@ -11,5 +11,4 @@ sr = input ("enter r:")
 fh = float(sh)
 fr = float(sr)
 xp = computepay(fh,fr)
-
 print("Pay:",xp)
