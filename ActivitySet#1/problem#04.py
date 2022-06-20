@@ -1,5 +1,4 @@
 # Conditional Execution
-
 hrs = float(input())
 r=float(input())
 if hrs<40:
