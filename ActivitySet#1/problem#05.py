@@ -1,14 +1,47 @@
-def computepay(h, r):
-    if h > 40 :
-        a = r * h
-        b = (h - 40.0) * (r * 0.5)
-        pay = a + b
+#ex 3.3
+score = input("Enter Score: ")
+s = float(score)
+if(s>1.0 or s<0):
+    print("please enter a value between 0.0 to 1.0")
+    exit()
+    if(s>=0.9):
+        print('A')
+    elif(>=0.8):
+        print('B')
+    elif(>=0.7):
+        print('c')
+    elif(>=0.6):
+        print('D')
+    elif(<0.6):
+        print('F')
     else:
-        pay = h * r
-    return Pay
-sh = input ("enter h:")
-sr = input ("enter r:")
-fh = float(sh)
-fr = float(sr)
-xp = computepay(fh,fr)
-print("Pay:",xp)
+        print("error")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

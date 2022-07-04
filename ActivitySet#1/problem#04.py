@@ -1,5 +1,4 @@
-# Conditional Execution
-
+#conditional execution
 
 hrs = float(input())
 r=float(input())

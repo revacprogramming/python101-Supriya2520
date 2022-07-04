@@ -1,17 +1,44 @@
-# Dictionaries
-files  = open("mbox-short.txt")
-for line in files:
-    if line.startswith("From"):
-        words = line.split()
+# Lists
+#ex 8.4
+fname = input("Enter file name: ")
+fh = open(fname)
+list1 = list()
+list2 = list()
 
-        if len(words) > 6:
-            counts[words[1]] = counts.get(words[1], 0) + 1
-bigcount = None
-bigword = None
+for line in fh:
+    x = line.split()
+    list1 = list1 + x
 
-for word, count in counts.items():
-    if bigcount is None or count > bigcount:
-        bigcount = count
-        bigword = word
-        
-print(bigword, bigcount)
+for justone in list1:
+    if justone not in list2:
+        list2.append(justone)
+
+print(sorted(list2))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

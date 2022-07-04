@@ -1,23 +1,46 @@
-# Loops & Iterators
-large=None
-small=None
-while True:
-  n=input()
-  if(n == "done"):
-    break
-    try:
-      num=int(n)
-      if small is None:
-        small=num
-        elif(small>num):
-          small=num
+#functions
+def computepay(h, r):
+    if h > 40 :
+        a = r * h
+        b = (h - 40.0) * (r * 0.5)
+        pay = a + b
+    else:
+        pay = h * r
+    return Pay
+sh = input ("enter h:")
+sr = input ("enter r:")
+fh = float(sh)
+fr = float(sr)
+xp = computepay(fh,fr)
+print("Pay:",xp)
 
-      if large is None:
-        large=num
-        elif(large<num):
-          large=num
-          continue
-    except:
-      print("invalid input")    
-print("Maximum is",large)
-print("Minimum is",small)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

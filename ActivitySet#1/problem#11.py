@@ -1,18 +1,42 @@
-# Tuples
-filename = "dataset/mbox-short.txt"
-name = input("Enter file:")
+# Lists
+#ex 8.5
+fname = input("Enter file name: ")
+x = open(fname)
+count = 0
 
-if len(name) < 1:
-    name = "mbox-short.txt"
-counts = {}
-handle = open(name)
-for line in handle:
-    if not line.startswith('From '):
-        continue
-    x = line.replace(':',' ')
-    words = x.split()
-    y = words[5:6]
-    for word in y:
-        counts[word] = counts.get(word,0) + 1
-lst = []
+for line in x:
+    y = line.find('From ')
+    if y >= 0:
+        print (line.split()[1])
+        count += 1
+
+print("There were", count, "lines in the file with From as the first word")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
