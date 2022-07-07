@@ -1,7 +1,5 @@
 # Extract Data from JSON
 import json, urllib.request
-
-
 url = input('Enter URL:')
 if len(url) < 1: url = 'http://py4e-data.dr-chuck.net/comments_1465666.json'
 data = urllib.request.urlopen(url).read().decode()             # URL Request/Open()/Read()/Decode()
