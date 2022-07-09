@@ -3,7 +3,6 @@
 fname = input("Enter file name: ")
 x = open(fname)
 count = 0
-
 for line in x:
     y = line.find('From ')
     if y >= 0:
